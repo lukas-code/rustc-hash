@@ -1,3 +1,7 @@
+## 2.2.0
+
+- Allow `rustc-hash` to be a dependency of the Rust standard library.
+
 ## 2.1.0
 
 - Implement `Clone` for `FxRandomState`
