@@ -14,14 +14,8 @@
 //! # fn main() { }
 //! ```
 
-#![no_std]
+#![cfg_attr(not(feature = "std"), no_std)]
 #![cfg_attr(feature = "nightly", feature(hasher_prefixfree_extras))]
-
-#[cfg(feature = "std")]
-extern crate std;
-
-#[cfg(feature = "rand")]
-extern crate rand;
 
 #[cfg(feature = "rand")]
 mod random_state;
